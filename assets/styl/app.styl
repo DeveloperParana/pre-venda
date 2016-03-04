@@ -1,0 +1,232 @@
+@import '//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500'
+@import '../icomoon/style.css'
+
+@import 'variables'
+
+*
+	padding 0
+	margin 0
+	box-sizing border-box
+
+html,
+body
+	height 100%	
+	
+.header-content
+	width 100%
+	min-height 100%
+	background url('../images/background.jpg')
+	background-size cover 
+
+.logo
+	width 100%
+	text-align center
+	
+	.image,
+	.title
+		padding-top 60px
+		display inline-block
+		vertical-align middle
+		
+		+below(510px)
+			display block
+			margin 0 auto
+			padding-top 30px
+
+	.title
+		font-size 20px
+		color $c-primary	
+		font-family $f-primary
+		font-style italic 
+		font-weight 100
+		margin-left 10px
+
+.header-text
+	margin-top 60px
+	text-align center
+	padding 40px 0
+
+	.title,
+	.text
+		color $c-primary	
+		font-family $f-primary
+
+	.title
+		font-size 35px
+		font-weight 500
+		text-transform uppercase
+		letter-spacing 5px
+		
+		+below(750px)
+			width 90%
+			margin 0 auto
+
+		+below(510px)	
+			font-size 30px
+			letter-spacing 2px
+
+		+below(395px)	
+			font-size 25px
+			letter-spacing 1px
+	
+	.text
+		max-width 70%
+		margin 0 auto
+		font-weight 100
+		font-size 18px
+		font-style italic
+
+		+below(685px)
+			max-width 90%
+			font-size 16px
+
+	.socials 
+		margin-top 100px 
+		
+		+below(540px)	
+			margin-top 40px
+
+		+below(350px)	
+			margin-top 20px
+
+		@media all and (orientation:landscape)
+			margin-top 0 
+	
+	.icon
+		margin 0 8px
+		margin-top 20px 
+		display inline-block
+		font-size 25px
+		color $c-primary	
+		text-decoration none
+		
+		+below(880px)
+			font-size 40px
+			margin 0 10px
+			margin-top 20px
+
+.tshirt-content	
+	font-size 0
+	
+.tshirt-container
+	position relative
+	z-index 1
+	text-align center
+	perspective 1000
+	width 50% 
+	height 100vh
+	display inline-block
+	vertical-align top
+	
+	+below(990px)
+		width 100%
+
+	&:hover .tshirt-image
+		transform rotateY(180deg)
+
+	.tshirt-image
+		width 100%
+		height 100%
+		transform-style preserve-3d
+		transition all 1.2s linear
+
+.front,
+.back
+	position absolute
+	width 100%
+	height 100%
+	backface-visibility hidden
+	
+	img
+		max-width 80%
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
+
+		@media all and (orientation:landscape)
+			max-width 30%
+
+.back
+	display block
+	transform rotateY(180deg)
+	box-sizing border-box
+	text-align center
+	background transparent
+
+.tshirt-information
+	width 50%
+	display inline-block
+	vertical-align top
+	height 100vh
+	background $c-secondary
+	padding 30px
+
+	+below(600px)
+		height initial
+	
+	+below(990px)
+		width 100%
+	
+	.title,
+	.text
+		color $c-primary
+		font-family $f-primary
+
+	.title
+		font-size 25px	
+		text-transform uppercase
+		font-weight 500
+
+	.text
+		font-weight 300
+		font-size 16px
+		margin-top 30px
+
+	strong
+		font-weight 500
+
+.tshirt-form
+	label
+		width 25px
+		height 25px
+		display inline-block
+		text-align center
+		line-height 25px
+		text-transform uppercase
+		margin-right 10px
+		font-size 14px
+		font-family $f-primary
+		border 1px solid $c-primary	
+		color $c-primary
+		background $c-secondary
+
+		+below(990px)
+			width 40px
+			height 40px
+			line-height 40px
+			margin-right 15px 
+	
+	input[type='radio']
+		display none
+
+	input[type='radio']:checked + label
+		background $c-primary
+		color $c-secondary
+		
+	.text
+		margin-top 40px
+		margin-bottom 10px	
+		
+	.tshirt-button
+		background $c-primary
+		color $c-secondary
+		font-size 16px
+		font-weight 400
+		font-family $f-primary
+		text-transform uppercase
+		padding 20px 15px
+		border none
+		cursor pointer	
+
+	
