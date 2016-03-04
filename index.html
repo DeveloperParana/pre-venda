@@ -1,79 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Pré-venda Devparaná</title>
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta charset="UTF-8">
+    <head>
+        <title>Pré-venda Devparaná</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
 
-		<link rel="stylesheet" href="assets/styles/app.css">
-	</head>
-	<body>
-		<header class="header-content">
-			<div class="logo">
-				<img class="image" src="assets/images/logo.png" alt="Devparaná">
-				<h2 class="title">de desenvolvedores para desenvolvedores</h2>
-			</div>
+        <link rel="stylesheet" href="assets/styles/app.css">
+    </head>
+    <body>
+        <header class="header-content">
+            <div class="logo">
+                <img class="image" src="assets/images/logo.png" alt="Devparaná">
+                <h2 class="title">de desenvolvedores para desenvolvedores</h2>
+            </div>
 
-			<div class="header-text">
-				<h1 class="title">Pré-venda camiseta devparaná</h1>
-				<p class="text">Participe da nossa pré-venda, todo dinheiro que arrecadarmos será revertido para a organização de novos eventos.</p>
+            <div class="header-text">
+                <h1 class="title">Pré-venda camiseta devparaná</h1>
+                <p class="text">Participe da nossa pré-venda, todo dinheiro que arrecadarmos será revertido para a organização de novos eventos.</p>
 
-				<p class="socials text">Nos acompanhe pelas redes sociais!</p>
-				<a class="icon icon-facebook" href="https://www.facebook.com/DeveloperParana/" target="_blank"></a>
-				<a class="icon icon-twitter" href="https://twitter.com/developerparana" target="_blank"></a>
-				<a class="icon icon-github" href="https://github.com/DeveloperParana" target="_blank"></a>
-				<a class="icon icon-youtube" href="https://www.youtube.com/channel/UCbQTyfwWNobgIfjVF0edVdA" target="_blank"></a>
-			</div>
-		</header>
-		
-		<main class="tshirt-content">
-			<section class="tshirt-container">
-			  <div class="tshirt-image">
-			    <div class="front">
-			      <img src="assets/images/front.png">
-			    </div>
-			    
-			    <div class="back">
-			      <img src="assets/images/back.png" alt="">
-			    </div>
-			  </div>
-			</section>
+                <p class="socials text">Nos acompanhe pelas redes sociais!</p>
+                <a class="icon icon-facebook" href="https://www.facebook.com/DeveloperParana/" target="_blank"></a>
+                <a class="icon icon-twitter" href="https://twitter.com/developerparana" target="_blank"></a>
+                <a class="icon icon-github" href="https://github.com/DeveloperParana" target="_blank"></a>
+                <a class="icon icon-youtube" href="https://www.youtube.com/channel/UCbQTyfwWNobgIfjVF0edVdA" target="_blank"></a>
+            </div>
+        </header>
 
-			<section class="tshirt-information">
-				<h2 class="title">Camiseta devparaná</h2>
-				<p class="text">Participe da nossa pré-venda, todo dinheiro que arrecadarmos será revertido para a organização de novos eventos.</p>
+        <main class="tshirt-content">
+            <section class="tshirt-container">
+              <div class="tshirt-image">
+                <div class="front">
+                  <img src="assets/images/front.png">
+                </div>
 
-				<p class="text"><strong>Métodos de pagamento</strong>, nessa pré-venda utilizaremos apenas o pagseguro, porem estamos pensando em maneiras para tornar o produto mais acessivel.</p>
+                <div class="back">
+                  <img src="assets/images/back.png" alt="">
+                </div>
+              </div>
+            </section>
 
-				<p class="text"><strong>Sobre a entrega</strong>, todos os pedidos serão entregues durante o 2º meetup maringá que ocorrera dia 19/03/2016, na Unicesumar.</p>
+            <section class="tshirt-information">
+                <h2 class="title">Camiseta devparaná</h2>
+                <p class="text">Participe da nossa pré-venda, todo dinheiro que arrecadarmos será revertido para a organização de novos eventos.</p>
 
-				<form id="venda" class="tshirt-form" action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post">
-					<input id="productCode" type="hidden" name="code" value="">
+                <p class="text"><strong>Métodos de pagamento</strong>, nessa pré-venda utilizaremos apenas o pagseguro, porem estamos pensando em maneiras para tornar o produto mais acessivel.</p>
 
-					<p class="text"><strong>Primeiro</strong>, selecione o tamanho desejado.</p>
-					<input id="sizeP" type="radio" name="productSize" value="p">
-					<label for="sizeP">p</label>
+                <p class="text"><strong>Sobre a entrega</strong>, todos os pedidos serão entregues durante o 2º meetup maringá que ocorrera dia 19/03/2016, na Unicesumar.</p>
 
-					<input id="sizeM" type="radio" name="productSize" value="m">
-					<label for="sizeM">m</label>
+                <form id="venda" class="tshirt-form" action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post">
+                    <input id="productCode" type="hidden" name="code" value="">
 
-					<input id="sizeG" type="radio" name="productSize" value="g" checked="checked">
-					<label for="sizeG">g</label>
+                    <p class="text"><strong>Primeiro</strong>, selecione o modelo desejado.</p>
+                    <p class="text">Masculino:</p>
+                    <input id="sizeP" type="radio" name="productSize" value="p">
+                    <label for="sizeP">p</label>
 
-					<input id="sizeGG" type="radio" name="productSize" value="gg">
-					<label for="sizeGG">gg</label>
+                    <input id="sizeM" type="radio" name="productSize" value="m">
+                    <label for="sizeM">m</label>
 
-					<input id="sizeXG" type="radio" name="productSize" value="xg">
-					<label for="sizeXG">xg</label>
+                    <input id="sizeG" type="radio" name="productSize" value="g" checked="checked">
+                    <label for="sizeG">g</label>
 
-					<p class="text">Com o tamanho já selecionado clique em <strong>adquirir</strong>.</p>
+                    <input id="sizeGG" type="radio" name="productSize" value="gg">
+                    <label for="sizeGG">gg</label>
 
-					<input class="tshirt-button" type="submit" value="Comprar com pagseguro">
-				</form>
-			</section>
-		</main>
-	</body>
+                    <input id="sizeXG" type="radio" name="productSize" value="xg">
+                    <label for="sizeXG">xg</label>
 
-	<script src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
-	<script src="assets/scripts/app.js"></script>
+                    <p class="text">Feminino:</p>
+                    <input id="sizeP" type="radio" name="productSize" value="fp">
+                    <label for="sizeP">p</label>
+
+                    <input id="sizeM" type="radio" name="productSize" value="fm">
+                    <label for="sizeM">m</label>
+
+                    <input id="sizeG" type="radio" name="productSize" value="fg">
+                    <label for="sizeG">g</label>
+
+                    <input id="sizeGG" type="radio" name="productSize" value="fgg">
+                    <label for="sizeGG">gg</label>
+
+                    <p class="text">Com o tamanho já selecionado clique em <strong>adquirir</strong>.</p>
+
+                    <input class="tshirt-button" type="submit" value="Comprar com pagseguro">
+                </form>
+            </section>
+        </main>
+    </body>
+
+    <script src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
+    <script src="assets/scripts/app.js"></script>
 </html>
