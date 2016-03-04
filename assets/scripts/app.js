@@ -1,4 +1,4 @@
-;(function() {
+(function() {
   'use strict';
 
   var product = {
@@ -25,10 +25,10 @@
       return false;
     }
 
-    var tshirtButton = document.querySelector('.tshirt-button');
-    tshirtButton.addEventListener('click', comprar);
-
     document.querySelector('#productCode').value = product[selectedSize];
     PagSeguroLightbox(document.querySelector('#venda'));
   }
+
+  var tshirtButton = document.querySelector('.tshirt-button');
+  tshirtButton.addEventListener('click', comprar);
 })();
