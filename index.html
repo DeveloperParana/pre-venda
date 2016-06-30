@@ -15,10 +15,8 @@
             </div>
 
             <div class="header-text">
-                <h1 class="title">Venda de camistas encerrada</h1>
-                <p class="text">A pré-venda foi realizada com objetivo de reverter todo dinheiro que arrecadado para a organização de novos eventos.</p>
-                <p class="text">Em breve teremos a venda contínua de itens da comunidade Dev Paraná.</p>
-                <p class="text">Agradecemos a todos que realizaram a compra.</p>
+                <h1 class="title">Pré-venda camiseta devparaná</h1>
+                <p class="text">Participe da nossa pré-venda, todo dinheiro que arrecadarmos será revertido para a organização de novos eventos.</p>
 
                 <p class="socials text">Nos acompanhe pelas redes sociais!</p>
                 <a class="icon icon-facebook" href="https://www.facebook.com/DeveloperParana/" target="_blank"></a>
@@ -27,5 +25,73 @@
                 <a class="icon icon-youtube" href="https://www.youtube.com/channel/UCbQTyfwWNobgIfjVF0edVdA" target="_blank"></a>
             </div>
         </header>
+
+        <main class="tshirt-content">
+            <section class="tshirt-container">
+              <div class="tshirt-image">
+                <div class="front">
+                  <img src="assets/images/front.png">
+                </div>
+
+                <div class="back">
+                  <img src="assets/images/back.png" alt="">
+                </div>
+              </div>
+            </section>
+
+            <section class="tshirt-information">
+                <h2 class="title">Camiseta devparaná</h2>
+                <p class="text">Participe da nossa pré-venda, todo dinheiro que arrecadarmos será revertido para a organização de novos eventos.</p>
+
+                <p class="text"><strong>Métodos de pagamento</strong>, nessa pré-venda utilizaremos apenas o pagseguro, porem estamos pensando em maneiras para tornar o produto mais acessível.</p>
+
+                <p class="text"><strong>Sobre a entrega</strong>, todos os pedidos serão entregues presencialmente no evento do dia 20/08/2016 em Toledo ou retirando pessoalmente com algum dos membros da staff (canal #camisetas está disponível para tirar dúvidas).</p>
+
+                <p class="text">Não teremos camisetas disponíveis para venda no dia do evento.</p>
+
+                <p class="text"><strong>VALOR: R$ 35,00</strong></p>
+
+                <form id="venda" class="tshirt-form" action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="return false;">
+                    <input id="productCode" type="hidden" name="code" value="">
+
+                    <p class="text"><strong>Primeiro</strong>, selecione o modelo / tamanho desejado.</p>
+                    <p class="text">Masculino:</p>
+                    <input id="sizeP" type="radio" name="productSize" value="p">
+                    <label for="sizeP">p</label>
+
+                    <input id="sizeM" type="radio" name="productSize" value="m">
+                    <label for="sizeM">m</label>
+
+                    <input id="sizeG" type="radio" name="productSize" value="g" checked="checked">
+                    <label for="sizeG">g</label>
+
+                    <input id="sizeGG" type="radio" name="productSize" value="gg">
+                    <label for="sizeGG">gg</label>
+
+                    <input id="sizeXG" type="radio" name="productSize" value="xg">
+                    <label for="sizeXG">xg</label>
+
+                    <p class="text">Feminino:</p>
+                    <input id="sizeFP" type="radio" name="productSize" value="fp">
+                    <label for="sizeFP">p</label>
+
+                    <input id="sizeFM" type="radio" name="productSize" value="fm">
+                    <label for="sizeFM">m</label>
+
+                    <input id="sizeFG" type="radio" name="productSize" value="fg">
+                    <label for="sizeFG">g</label>
+
+                    <input id="sizeFGG" type="radio" name="productSize" value="fgg">
+                    <label for="sizeFGG">gg</label>
+
+                    <p class="text">Com o modelo / tamanho já selecionado clique em <strong>adquirir</strong>.</p>
+
+                    <input class="tshirt-button" type="submit" value="Comprar com pagseguro">
+                </form>
+            </section>
+        </main>
     </body>
+
+    <script src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
+    <script src="assets/scripts/app.js"></script>
 </html>
