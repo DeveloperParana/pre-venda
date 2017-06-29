@@ -1,96 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Pré-venda Devparaná</title>
-        <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon" />
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="UTF-8">
+<head>
+<title>Camiseta Dev Paraná Conference 2017</title>
+  <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
 
-        <link rel="stylesheet" href="assets/styles/app.css">
-    </head>
-    <body>
-        <header class="header-content">
-            <div class="logo">
-                <img class="image" src="assets/images/logo.png" alt="Devparaná">
-                <h2 class="title">de desenvolvedores para desenvolvedores</h2>
-            </div>
+  <link rel="stylesheet" href="assets/styles/app.css">
+</head>
+<body>
+  <main class="tshirt-content">
+    <section class="tshirt-container">
+    </section>
 
-            <div class="header-text">
-                <h1 class="title">Pré-venda camiseta devparaná</h1>
-                <p class="text">Participe da nossa pré-venda, todo dinheiro que arrecadarmos será revertido para a organização de novos eventos.</p>
+    <section class="tshirt-information">
+      <h2 class="title">Camiseta Dev Paraná Conference 2017</h2>
 
-                <p class="socials text">Nos acompanhe pelas redes sociais!</p>
-                <a class="icon icon-facebook" href="https://www.facebook.com/DeveloperParana/" target="_blank"></a>
-                <a class="icon icon-twitter" href="https://twitter.com/developerparana" target="_blank"></a>
-                <a class="icon icon-github" href="https://github.com/DeveloperParana" target="_blank"></a>
-                <a class="icon icon-youtube" href="https://www.youtube.com/channel/UCbQTyfwWNobgIfjVF0edVdA" target="_blank"></a>
-            </div>
-        </header>
+      <p class="text">Participe da nossa pré-venda, que estará aberta até o dia 07/07/2017.</p>
 
-        <main class="tshirt-content">
-            <section class="tshirt-container">
-              <div class="tshirt-image">
-                <div class="front">
-                  <img src="assets/images/front.png">
-                </div>
+      <p class="text"><strong>Sobre a entrega</strong>, todos os pedidos serão entregues presencialmente no momento do check-in, no dia do evento 22/07/2017.</p>
 
-                <div class="back">
-                  <img src="assets/images/back.png" alt="">
-                </div>
-              </div>
-            </section>
+      <p class="text">Não teremos camisetas disponíveis para venda no dia do evento.</p>
 
-            <section class="tshirt-information">
-                <h2 class="title">Camiseta devparaná</h2>
-                <p class="text">Participe da nossa pré-venda, todo dinheiro que arrecadarmos será revertido para a organização de novos eventos.</p>
+      <p class="text"><strong>VALOR: R$ 35,00</strong></p>
 
-                <p class="text"><strong>Sobre a entrega</strong>, todos os pedidos serão entregues presencialmente no evento do dia 20/08/2016 em Toledo ou retirando pessoalmente com algum dos membros da staff (canal #camisetas está disponível para tirar dúvidas).</p>
+      <form id="venda" class="tshirt-form" action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="return false;">
+        <input id="productCode" type="hidden" name="code" value="">
 
-                <p class="text">Não teremos camisetas disponíveis para venda no dia do evento.</p>
+        <p class="text"><strong>Primeiro</strong>, selecione o modelo / tamanho desejado.</p>
+        <p class="text">Masculino:</p>
+        <input id="sizeP" type="radio" name="productSize" value="p">
+        <label for="sizeP">p</label>
 
-                <p class="text"><strong>VALOR: R$ 35,00</strong></p>
+        <input id="sizeM" type="radio" name="productSize" value="m">
+        <label for="sizeM">m</label>
 
-                <form id="venda" class="tshirt-form" action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="return false;">
-                    <input id="productCode" type="hidden" name="code" value="">
+        <input id="sizeG" type="radio" name="productSize" value="g" checked="checked">
+        <label for="sizeG">g</label>
 
-                    <p class="text"><strong>Primeiro</strong>, selecione o modelo / tamanho desejado.</p>
-                    <p class="text">Masculino:</p>
-                    <input id="sizeP" type="radio" name="productSize" value="p">
-                    <label for="sizeP">p</label>
+        <input id="sizeGG" type="radio" name="productSize" value="gg">
+        <label for="sizeGG">gg</label>
 
-                    <input id="sizeM" type="radio" name="productSize" value="m">
-                    <label for="sizeM">m</label>
+        <input id="sizeXG" type="radio" name="productSize" value="xg">
+        <label for="sizeXG">xg</label>
 
-                    <input id="sizeG" type="radio" name="productSize" value="g" checked="checked">
-                    <label for="sizeG">g</label>
+        <p class="text">Feminino:</p>
+        <input id="sizeFP" type="radio" name="productSize" value="fp">
+        <label for="sizeFP">p</label>
 
-                    <input id="sizeGG" type="radio" name="productSize" value="gg">
-                    <label for="sizeGG">gg</label>
+        <input id="sizeFM" type="radio" name="productSize" value="fm">
+        <label for="sizeFM">m</label>
 
-                    <input id="sizeXG" type="radio" name="productSize" value="xg">
-                    <label for="sizeXG">xg</label>
+        <input id="sizeFG" type="radio" name="productSize" value="fg">
+        <label for="sizeFG">g</label>
 
-                    <p class="text">Feminino:</p>
-                    <input id="sizeFP" type="radio" name="productSize" value="fp">
-                    <label for="sizeFP">p</label>
+        <input id="sizeFGG" type="radio" name="productSize" value="fgg">
+        <label for="sizeFGG">gg</label>
 
-                    <input id="sizeFM" type="radio" name="productSize" value="fm">
-                    <label for="sizeFM">m</label>
+        <p class="text">Com o modelo / tamanho selecionado, clique em <strong>Comprar com PagSeguro</strong>.</p>
 
-                    <input id="sizeFG" type="radio" name="productSize" value="fg">
-                    <label for="sizeFG">g</label>
+        <input class="tshirt-button" type="submit" value="Comprar com PagSeguro">
+      </form>
 
-                    <input id="sizeFGG" type="radio" name="productSize" value="fgg">
-                    <label for="sizeFGG">gg</label>
+      <a class="link" href="http://www.devparana.org/conf" target="_blank">devparana.org/conf</a>
+    </section>
+  </main>
+</body>
 
-                    <p class="text">Com o modelo / tamanho já selecionado clique em <strong>Comprar com PagSeguro</strong>.</p>
-
-                    <input class="tshirt-button" type="submit" value="Comprar com PagSeguro">
-                </form>
-            </section>
-        </main>
-    </body>
-
-    <script src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
-    <script src="assets/scripts/app.js"></script>
+<script src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
+<script src="assets/scripts/app.js"></script>
 </html>
