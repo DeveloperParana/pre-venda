@@ -2,19 +2,19 @@
   "name": "starter-node-angular",
   "main": "server.js",
   "dependencies": {
-    "express": "~4.5.1",
-    "mongoose": "~3.8.0",
-    "body-parser": "~1.4.2",
-    "method-override": "~2.0.2"
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.6.10"
   },
   "devDependencies": {
     "autoprefixer-stylus": "^0.9.1",
-    "bower": "^1.7.7",
-    "browser-sync": "^2.11.1",
+    "bower": "^1.8.8",
+    "browser-sync": "^2.26.7",
     "g": "^2.0.0",
-    "gulp": "^3.9.0",
-    "gulp-plumber": "^1.0.1",
-    "gulp-stylus": "^2.3.0",
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-stylus": "^2.7.0",
     "rupture": "^0.6.1"
   }
 }
